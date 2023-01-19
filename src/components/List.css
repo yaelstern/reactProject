@@ -1,0 +1,17 @@
+.mineImg{
+    width:100%
+}
+.mineCard{
+    border-style: solid;
+    border-color: black;
+    margin: 2%;
+    width: 200px;
+}
+.mineAll{
+    display:flex;
+    flex-wrap: wrap;
+}
+.myInput{
+    margin-left: 25%;
+    margin-top: 10%;
+}

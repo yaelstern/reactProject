@@ -1,0 +1,23 @@
+img{
+    width: 10%;
+}
+tr{
+    width: 10%;
+  margin: auto;
+
+}
+td,th{
+    padding: 3%;
+}
+table{
+    margin: 2%;
+}
+tr #add{
+width: 54%;
+}
+.inputSize{
+    width: 60%;
+}
+#addImg{
+    width: 15%;
+}

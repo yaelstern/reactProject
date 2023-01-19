@@ -1,25 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import Login from './components/Login';
+import { BrowserRouter } from 'react-router-dom';
+import MyRoute from './components/MyRoute';
+import React, { useState } from 'react';
+import ArrSaleContext from './components/ArrSaleContext';
+import HookForm from './components/Hook-Form';
+
 
 function App() {
+  const [isLogin, setIsLogin] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        {
+          !isLogin ?
+            <Login setIsLogin={setIsLogin} />
+            :
+            <ArrSaleContext>
+              <MyRoute setIsLogin={setIsLogin}/>
+            </ArrSaleContext>
+        }
+
+      </BrowserRouter>
+      {/* <HookForm/> */}
     </div>
   );
 }
-
 export default App;
