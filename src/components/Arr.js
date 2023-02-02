@@ -23,8 +23,8 @@ export default function Arr() {
                         <thead>
                             <tr>
                                 <th>name</th>
-                                <th>price</th>
-                                <th>color </th>
+                                <th>color</th>
+                                <th>price </th>
                                 <th>img</th>
                             </tr>
                         </thead>
